@@ -15,17 +15,45 @@
         </h1>
         <div>
           <button
-            id="mobile-open-button"
-            class="text-3xl sm:hidden focus:outline-none"
+            id="hamburger-button"
+            class="text-3xl md:hidden cursor-pointer"
           >
             &#9776;
           </button>
-          <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
             <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
             <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-            <a href="#contacts" class="hover:opacity-90">Contact Us</a>
+            <a href="#contact" class="hover:opacity-90">Contact Us</a>
           </nav>
         </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex flex-col justify-center"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+            >Hero</a
+          >
+          <a href="#rockets" class="w-full text-center py-6 hover:opacity-90"
+            >Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+            >Contact Us</a
+          >
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
       </section>
     </header>
     <main class="max-w-4xl mx-auto">
@@ -219,7 +247,7 @@
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
       <section
-        id="contacts"
+        id="contact"
         class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
       >
         <h2
@@ -252,11 +280,11 @@
             required
             class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
           ></textarea>
-          <button
+          <buttonß
             class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
           >
             Submit
-          </button>
+          </buttonß>
         </form>
       </section>
     </main>
